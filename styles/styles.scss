@@ -1,0 +1,87 @@
+@import "./kit/mixins";
+@import "./kit/variables";
+@import "./kit/header";
+
+.container {
+    max-width: $desktop;
+    max-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: $color-darkblue;
+    @media (min-width: $desktop) and (max-width: $desktop-l) {
+        max-width: $desktop;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+    @media (min-width: $tablet) and (max-width: 1199px) {
+        max-width: $tablet;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+    @media (min-width: $phone) and (max-width:767px) {
+        background-color: $color-darkblue;
+        max-width: 767px;
+        max-height: 100%;
+        margin: 0 auto;
+    }
+}
+
+.soap h2 {
+    color: $color-darkblue;
+}
+
+h2 {
+    color: $color-green;
+}
+p {
+    color: $color-grey;
+}
+
+.categories>ul>li {
+    @media (min-width: $tablet) and (max-width: $desktop) {
+        border-right: none;
+    }
+}
+
+.categories>ul>li:hover {
+    background-color: $color-green;
+    p {
+        color: #fff;
+    }
+}
+
+
+.categories>ul>li:active {
+    background-color: #0a05f9;
+    p {
+        color: rgb(8, 61, 5);
+    }
+}
+
+.categories>ul>li:focus {
+    background-color: #0e0d2d;
+    p {
+        color: rgb(255, 0, 0);
+    }
+}
+
+.btn {
+    background-color: $color-green;
+    color: $color-darkblue;
+    border-radius: 8px;
+    padding: 12px 30px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.drop__medicine ul > li  {
+    background-color: $color-greyblue;
+}
+
+.drop__medicine ul > li h3 {
+    color: $color-green;
+}
+
+#span {
+    background-color: $color-grey;  
+}

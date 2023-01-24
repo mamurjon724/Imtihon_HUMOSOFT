@@ -1,0 +1,42 @@
+@import "./styles.css";
+
+@import "./first.css";
+@import "./second.css";
+@import "./third.css";
+@import "./fourth.css";
+@import "./fifth.css";
+@import "./sixth.css";
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+body {
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+main {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.btn:hover {
+    background-color: #1F2937;
+    color: #fff;
+}
+
+.btn:active {
+    background: red;
+}
+
+.btn:focus {
+    opacity: 0.7;
+}

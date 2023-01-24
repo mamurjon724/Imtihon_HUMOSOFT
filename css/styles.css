@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 768px;
+    background-color: red;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    background-color: aqua;
+    display: block;
+    text-align: center;
+    right: 0 auto;
+  }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  justify-content: space-between;
+  gap: 290px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #1F2937;
+  z-index: 12;
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+  header {
+    gap: 50px;
+  }
+}
+@media (min-width: 100%) and (max-width: 768px) {
+  header {
+    gap: 100px;
+  }
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .hidden {
+  display: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    padding: 30px;
+    background-color: #1F2937;
+    transform: translateX(-100%);
+    transition: 0.3s ease;
+  }
+  .topnav ul {
+    flex-direction: column;
+  }
+}
+
+.topnav ul {
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  label::before, label::after {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    border-radius: 1.15px;
+  }
+}
+input:checked + label + .topnav {
+  transform: translateX(0);
+}
+
+.container {
+  max-width: 1200px;
+  max-height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #1F2937;
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 100%) and (max-width: 767px) {
+  .container {
+    background-color: #1F2937;
+    max-width: 767px;
+    max-height: 100%;
+    margin: 0 auto;
+  }
+}
+
+.soap h2 {
+  color: #1F2937;
+}
+
+h2 {
+  color: #5FD788;
+}
+
+p {
+  color: #9CA3AF;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .categories > ul > li {
+    border-right: none;
+  }
+}
+
+.categories > ul > li:hover {
+  background-color: #5FD788;
+}
+.categories > ul > li:hover p {
+  color: #fff;
+}
+
+.categories > ul > li:active {
+  background-color: #0a05f9;
+}
+.categories > ul > li:active p {
+  color: rgb(8, 61, 5);
+}
+
+.categories > ul > li:focus {
+  background-color: #0e0d2d;
+}
+.categories > ul > li:focus p {
+  color: rgb(255, 0, 0);
+}
+
+.btn {
+  background-color: #5FD788;
+  color: #1F2937;
+  border-radius: 8px;
+  padding: 12px 30px;
+  display: inline-block;
+  border: 1px solid black;
+}
+
+.drop__medicine ul > li {
+  background-color: #374151;
+}
+
+.drop__medicine ul > li h3 {
+  color: #5FD788;
+}
+
+#span {
+  background-color: #9CA3AF;
+}/*# sourceMappingURL=styles.css.map */

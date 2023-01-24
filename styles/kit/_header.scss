@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: $desktop;
+    margin: 0 auto;
+    @media (max-width: $desktop) {
+      max-width: $tablet;
+      background-color: red;
+    }
+    @media (max-width: $tablet) {
+      max-width: 100%;
+      background-color: aqua;
+      display: block;
+      text-align: center;
+      right: 0 auto;
+    }
+  }
+  
+//  header {
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     position: fixed;
+//     top: 0;
+//     background-color: $color-darkblue;
+//     width: 1200px;
+//     z-index: 12;
+//     @media (min-width: $tablet) and (max-width: $desktop) {
+//         width: 770px;
+//     }
+//     @media (min-width: $phone) and (max-width: $tablet) {
+//         width: none;
+//     }
+//  }
+
+header {
+    position: fixed;
+    top:0;
+    justify-content: space-between;
+    gap: 290px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $color-darkblue;
+    z-index: 12;
+    @media (min-width: $tablet) and (max-width: $desktop) {
+        gap: 50px;
+    }
+
+    @media (min-width: $phone) and (max-width: $tablet) {
+        gap: 100px;
+    }
+}
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+   
+    .hidden {
+      display: hidden;
+    }
+   
+    
+  }
+  
+  
+  
+  .hidden {
+    display: none;
+  }
+  
+  
+  
+   .topnav {
+    @media (max-width: $tablet) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      padding: 30px;
+      background-color: $color-darkblue;
+      transform: translateX(-100%);
+      transition: 0.3s ease;
+  
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+  
+    .topnav ul {
+    display: flex;
+    gap: 30px;
+  
+   
+    
+  }
+  @media (max-width:$tablet) {
+    label {
+      &::before,
+      &::after {
+        display: block;
+        content: "";
+        width: 16px;
+        height: 3px;
+        background-color: #fff;
+        margin: 3px 0;
+        border-radius: 1.15px;
+      }
+     }
+  }
+  input:checked + label + .topnav {
+    transform: translateX(0);
+  }

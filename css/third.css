@@ -1,0 +1,111 @@
+.image-with__text {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.image-with__text .med__2 {
+    text-align: right;
+}
+
+.image-with__text h2 {
+    width: 600px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 107.9%;
+    letter-spacing: 0.01em;
+    position: relative;
+    right: 50px;
+}
+
+.image-with__text p {
+    width: 550px;
+    font-style: 14px;
+    line-height: 140%;
+    margin-bottom: 25px;
+}
+
+.special {
+    position: relative;
+    margin-right: 50px;
+}
+
+@media (min-width:768px) and (max-width: 1199px) {
+    .med__2 h2 {
+        width: 700px;
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 107.9%;
+        letter-spacing: 0.01em;
+        position: relative;
+        right: 50px;
+    }
+    
+    .med__2 p {
+        position: relative;
+        width: 550px;
+        font-style: 10px;
+        line-height: 140%;
+        margin-bottom: 25px;
+        right: -100px;
+    }
+
+    .med__2 {
+        position: relative;
+        right: 200px;
+    }
+    
+    .image-with__text img {
+        position: relative;
+        margin-top: 40px;
+        width: 302.5px;
+        height: 256.13px;
+    }
+
+    .image-with__text {
+        position: relative;
+        margin-left: -150px;
+    }
+
+    .special {
+        position: relative;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .image-with__text {
+        display: block;
+    }
+
+    .med__2 {
+        text-align: center;
+    }
+
+    .med__2 h2 {
+        width: 300px;
+        text-align: center;
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .med__2 p {
+        position: relative;
+        margin-left: 55px;
+        text-align: center;
+        font-size: 10px;
+        width: 250px;
+    } 
+
+    .special {
+        position: relative;
+        left: -25px;
+    }
+
+    .image-with__text img {
+        position: relative;
+        width: 255.27px;
+        height: 155.27px;
+        margin-left: 60px;
+}
+}

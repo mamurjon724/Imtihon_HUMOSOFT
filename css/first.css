@@ -1,0 +1,81 @@
+.heroextra h2 {
+    width: 500px;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 89.84%;
+}
+
+.heroextra p {
+    width: 374px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 50px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .heroextra h2 {
+        width: 500px;
+        font-weight: 600;
+        font-size: 96px;
+        line-height: 89.84%;
+    }
+    
+    .heroextra p {
+        width: 374px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    
+    .hero {
+        align-items: center;
+        margin-top: 190px;
+        margin-left: -130px;
+    }
+    
+    .hero img {
+        width: 300px;
+        height: 300px;
+        margin-left: -100px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .heroextra h2 {
+        width: 180px;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 89.84%;
+        text-align: center;
+        margin-left: -25px;
+    }
+    
+    .heroextra p {
+        width: 200px;
+        font-weight: 600;
+        font-size: 8px;
+        line-height: 140%;
+        text-align: center;
+        margin-left: -45px;
+    }
+    
+    .hero {
+        display: flex;
+        flex-direction: column-reverse;  
+    }
+
+    .pics img {
+        width: 123px;
+        height: 83.64px;
+        margin-left: -15px;
+    }
+
+}
